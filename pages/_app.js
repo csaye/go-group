@@ -1,7 +1,18 @@
+import Head from 'next/head';
+
 import '../styles/globals.css'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+export default function App(props) {
+  const { Component, pageProps } = props;
 
-export default MyApp
+  return (
+    <>
+      <Head>
+        <title>GoGroup</title>
+        <meta name="description" content="Generate groups based on user preferences." />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Component {...pageProps} />
+    </>
+  );
+}
