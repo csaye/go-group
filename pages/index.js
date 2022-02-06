@@ -1,7 +1,7 @@
 import { getAuth, signOut } from 'firebase/auth';
 import { signInWithGoogle } from '../util/signInWithGoogle';
 
-import styles from '../styles/components/Index.module.css';
+import styles from '../styles/pages/Index.module.css';
 
 export default function Index() {
   const auth = getAuth();
