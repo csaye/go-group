@@ -8,15 +8,19 @@ export default function Index() {
 
   return (
     <div>
-      {
-        auth.currentUser ?
-        <button onClick={() => signOut(auth)}>
-          Sign Out
-        </button> :
-        <button onClick={signInWithGoogle}>
-          Sign in with Google
-        </button>
-      }
+      <h1>GoGroup</h1>
+      <p>Generate groups based on user preferences.</p>
+      <div>
+        {
+          auth.currentUser ?
+          <button onClick={() => signOut(auth)}>
+            Sign Out
+          </button> :
+          <button onClick={signInWithGoogle}>
+            Sign in with Google
+          </button>
+        }
+      </div>
     </div>
   );
 }
