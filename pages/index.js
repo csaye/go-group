@@ -7,10 +7,10 @@ export default function Index() {
   const auth = getAuth();
 
   return (
-    <div>
-      <h1>GoGroup</h1>
-      <p>Generate groups based on user preferences.</p>
-      <div>
+    <div className={styles.container}>
+      <div className={styles.center}>
+        <h1>GoGroup</h1>
+        <p>Generate groups based on user preferences.</p>
         {
           auth.currentUser ?
           <button onClick={() => signOut(auth)}>
