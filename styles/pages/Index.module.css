@@ -1,20 +1,24 @@
 .container {
   height: 100%;
+}
+
+.center {
+  height: calc(100% - 80px);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.center {
+.box {
   background: #efefef;
   text-align: center;
   padding: 20px 40px;
 }
 
-.center > h1 {
+.box > h1 {
   margin: 0 0 8px 0;
 }
 
-.center > button {
+.box > button {
   padding: 10px 20px;
 }

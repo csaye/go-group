@@ -12,7 +12,7 @@ export default function Index() {
     <div className={styles.container}>
       <Header />
       <div className={styles.center}>
-        <div>
+        <div className={styles.box}>
           <h1>GoGroup</h1>
           <p>Generate groups based on user preferences.</p>
           {
