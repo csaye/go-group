@@ -5,14 +5,14 @@ import styles from '../styles/components/Header.module.css';
 
 export default function Header() {
   return (
-    <div>
+    <div className={styles.container}>
       <Image src="/logo.png" width="48" height="48" />
       <h1>GoGroup</h1>
       <Link href="/">
-        <a>Home</a>
+        <a className={styles.link}>Home</a>
       </Link>
-      <Link href="/">
-        <a>Generate</a>
+      <Link href="/generate">
+        <a className={styles.link}>Generate</a>
       </Link>
     </div>
   );

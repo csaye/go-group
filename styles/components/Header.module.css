@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: #efefef;
+}
+
+.link {
+  color: #2196f3;
+}
+
+.link:hover {
+  color: #3f51b5;
+  text-decoration: underline;
+}
