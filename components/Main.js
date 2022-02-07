@@ -1,8 +1,9 @@
 import styles from '../styles/components/Main.module.css';
 
-export default function Main() {
+export default function Main(props) {
+  const { Component, pageProps } = props;
+
   return (
-    <div>
-    </div>
+    <Component {...pageProps} />
   );
 }
