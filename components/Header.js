@@ -8,6 +8,7 @@ export default function Header() {
     <div className={styles.container}>
       <Image src="/logo.png" width="48" height="48" />
       <h1>GoGroup</h1>
+      <span className="flexfill" />
       <Link href="/">
         <a className={styles.link}>Home</a>
       </Link>
