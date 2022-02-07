@@ -12,17 +12,19 @@ export default function Index() {
     <div className={styles.container}>
       <Header />
       <div className={styles.center}>
-        <h1>GoGroup</h1>
-        <p>Generate groups based on user preferences.</p>
-        {
-          auth.currentUser ?
-          <button onClick={() => signOut(auth)}>
-            Sign Out
-          </button> :
-          <button onClick={signInWithGoogle}>
-            Sign in with Google
-          </button>
-        }
+        <div>
+          <h1>GoGroup</h1>
+          <p>Generate groups based on user preferences.</p>
+          {
+            auth.currentUser ?
+            <button onClick={() => signOut(auth)}>
+              Sign Out
+            </button> :
+            <button onClick={signInWithGoogle}>
+              Sign in with Google
+            </button>
+          }
+        </div>
       </div>
     </div>
   );
