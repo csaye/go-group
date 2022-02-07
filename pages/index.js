@@ -1,3 +1,5 @@
+import Header from '../components/Header';
+
 import { getAuth, signOut } from 'firebase/auth';
 import { signInWithGoogle } from '../util/signInWithGoogle';
 
@@ -8,6 +10,7 @@ export default function Index() {
 
   return (
     <div className={styles.container}>
+      <Header />
       <div className={styles.center}>
         <h1>GoGroup</h1>
         <p>Generate groups based on user preferences.</p>

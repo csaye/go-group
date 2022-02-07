@@ -1,8 +1,11 @@
+import Header from '../components/Header';
+
 import styles from '../styles/pages/Generate.module.css';
 
-export default function Generate {
+export default function Generate() {
   return (
     <div>
+      <Header />
     </div>
   );
 }
